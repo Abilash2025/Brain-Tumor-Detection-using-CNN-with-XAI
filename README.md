@@ -249,3 +249,7 @@ The model performance depends on the diversity and quality of the training datas
 This project is intended for educational and research purposes only.
 
 It should not be used as a substitute for professional medical diagnosis.
+
+## Dataset Citation
+
+HIRA, MD IRFANUL KABIR; HOSSAIN, MD SOHAG; BITHEE, MST MORIOM AKTER ; Sara, Umme Sara;  HASAN, MD MAHMUDUL; Towsif, Abdullah Al; Ahmed, Md Kowsar (2026), “Brain Tumor MRI Dataset (Glioma, Meningioma, Pituitary, No Tumor)”, Mendeley Data, V6, doi: 10.17632/zwr4ntf94j.6
