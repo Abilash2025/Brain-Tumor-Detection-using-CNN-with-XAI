@@ -1,10 +1,10 @@
-# Brain Tumor Detection using CNN with Explainable AI
+## Brain Tumor Detection using CNN with Explainable AI
 
-## Deep Learning powered MRI brain tumor classification system with Grad-CAM based Explainable AI visualization using TensorFlow, FastAPI, and React.
+### Deep Learning powered MRI brain tumor classification system with Grad-CAM based Explainable AI visualization using TensorFlow, FastAPI, and React.
 
 ---
 
-# Introduction
+## Introduction
 
 Brain tumors are among the most critical neurological disorders, where early diagnosis can significantly improve treatment outcomes and survival rates. Manual MRI analysis performed by radiologists is time-consuming and requires extensive expertise. This project aims to assist the medical imaging workflow by using Deep Learning and Explainable AI techniques to automatically classify brain MRI scans into different tumor categories.
 
@@ -24,43 +24,43 @@ The project is built as a full-stack AI web application using:
 
 ---
 
-# Visual Helper
+## Visual Helper
 
-## System Architecture Diagram
+### System Architecture Diagram
 
 ![System Architecture](./assets/brain-tumor-xai-architecture.jpg)
 
-# Live Deployment
+## Live Deployment
 
-## Frontend
+### Frontend
 https://brain-tumor-detection-using-cnn-wit.vercel.app
 
-## Backend API
+### Backend API
 https://brain-tumor-backend-pm7e.onrender.com/docs
 
 ---
 
-# User Instructions
+## User Instructions
 
 These instructions are intended for users who simply want to use the application.
 
-## How to Use
+### How to Use
 
-### Step 1
+#### Step 1
 Open the deployed frontend application.
 
-### Step 2
+#### Step 2
 Click the:
 `Upload MRI Scan`
 button.
 
-### Step 3
+#### Step 3
 Select a brain MRI image from your device.
 
-### Step 4
+#### Step 4
 Wait for the model to process the image.
 
-### Step 5
+#### Step 5
 View:
 - predicted tumor class
 - confidence score
@@ -68,7 +68,7 @@ View:
 
 ---
 
-# Supported Predictions
+## Supported Predictions
 
 The system currently classifies MRI scans into:
 - Glioma
@@ -78,15 +78,15 @@ The system currently classifies MRI scans into:
 
 ---
 
-# Developer Instructions
+## Developer Instructions
 
 These instructions are intended for contributors and developers working on the project.
 
 ---
 
-# Backend Setup
+## Backend Setup
 
-## 1. Navigate to Backend
+### 1. Navigate to Backend
 
 ```bash
 cd Backend
@@ -94,15 +94,15 @@ cd Backend
 
 ---
 
-## 2. Create Virtual Environment
+### 2. Create Virtual Environment
 
-### Windows
+#### Windows
 ```bash
 python -m venv venv
 venv\Scripts\activate
 ```
 
-### Linux / MacOS
+#### Linux / MacOS
 ```bash
 python3 -m venv venv
 source venv/bin/activate
@@ -110,7 +110,7 @@ source venv/bin/activate
 
 ---
 
-## 3. Install Dependencies
+### 3. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -118,7 +118,7 @@ pip install -r requirements.txt
 
 ---
 
-## 4. Run Backend
+### 4. Run Backend
 
 ```bash
 uvicorn app.main:app --reload
@@ -136,9 +136,9 @@ http://127.0.0.1:8000/docs
 
 ---
 
-# Frontend Setup
+## Frontend Setup
 
-## 1. Navigate to Frontend
+### 1. Navigate to Frontend
 
 ```bash
 cd Frontend
@@ -146,7 +146,7 @@ cd Frontend
 
 ---
 
-## 2. Install Dependencies
+### 2. Install Dependencies
 
 ```bash
 npm install
@@ -154,7 +154,7 @@ npm install
 
 ---
 
-## 3. Configure Environment Variables
+### 3. Configure Environment Variables
 
 Create:
 ```text
@@ -168,7 +168,7 @@ VITE_API_URL=http://127.0.0.1:8000
 
 ---
 
-## 4. Run Frontend
+### 4. Run Frontend
 
 ```bash
 npm run dev
@@ -181,7 +181,7 @@ http://localhost:5173
 
 ---
 
-# Model Training
+## Model Training
 
 The CNN training notebook contains:
 - dataset preprocessing
@@ -197,37 +197,37 @@ Training was performed using:
 
 ---
 
-# Known Issues
+## Known Issues
 
-## 1. Render Cold Start Delay
+### 1. Render Cold Start Delay
 The free Render backend sleeps after inactivity. The first request may take 30–60 seconds.
 
 ---
 
-## 2. Grad-CAM Stability
+### 2. Grad-CAM Stability
 Grad-CAM visualizations may vary depending on TensorFlow runtime graph behavior after deployment.
 
 ---
 
-## 3. Model Generalization
+### 3. Model Generalization
 The CNN model may produce lower confidence predictions for low-quality or highly noisy MRI scans.
 
 ---
 
-## 4. Limited Dataset Diversity
+### 4. Limited Dataset Diversity
 The model performance depends on the diversity and quality of the training dataset.
 
 ---
 
-# Technologies Used
+## Technologies Used
 
-## Frontend
+### Frontend
 - React
 - Vite
 - Tailwind CSS
 - Axios
 
-## Backend
+### Backend
 - FastAPI
 - TensorFlow
 - Keras
@@ -235,16 +235,16 @@ The model performance depends on the diversity and quality of the training datas
 - NumPy
 - Matplotlib
 
-## Explainable AI
+### Explainable AI
 - Grad-CAM
 
-## Deployment
+### Deployment
 - Render
 - Vercel
 
 ---
 
-# License
+## License
 
 This project is intended for educational and research purposes only.
 
