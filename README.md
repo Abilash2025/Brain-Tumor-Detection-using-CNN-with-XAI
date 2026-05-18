@@ -24,7 +24,7 @@ The project is built as a full-stack AI web application using:
 
 ---
 
-## Visual Helper
+## Visual Helper 
 
 ### System Architecture Diagram
 
