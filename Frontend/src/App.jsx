@@ -171,7 +171,7 @@ function App() {
               <div className="w-64 h-64 bg-[#A29F90]/70 rounded-xl overflow-hidden shadow-lg">
 
                 <img
-                  src={`http://127.0.0.1:8000${prediction.gradcam_image}`}
+                  src={`${import.meta.env.VITE_API_URL}${prediction.gradcam_image}`}
                   alt="GradCAM"
                   className="w-full h-full object-cover"
                 />
