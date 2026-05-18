@@ -39,7 +39,7 @@ function App() {
       formData.append("file", selectedFile);
 
       const response = await axios.post(
-        "http://127.0.0.1:8000/predict",
+         `${import.meta.env.VITE_API_URL}/predict`,
         formData,
         {
           headers: {
