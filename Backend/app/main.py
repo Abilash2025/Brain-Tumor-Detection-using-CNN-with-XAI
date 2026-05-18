@@ -31,7 +31,7 @@ app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://brain-tumor-detection-using-cnn-wit.vercel.app/"
+        "https://brain-tumor-detection-using-cnn-wit.vercel.app"
     ],
     allow_credentials=True,
     allow_methods=["*"],
